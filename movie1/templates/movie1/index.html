@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<style>
+		strong{
+			word-spacing: 5px;
+		}
+	</style>
+	<title>
+		RCOEM Matrix
+	</title>
+</head>
+<body bgcolor="#339933">
+<form action="index.html" method="post">
+<input type="number" name="Row" value="{% if submitbutton == "submit" %}
+{{ row }}
+{% endif %}"/>
+<br><br>
+<input type="number" name="Column" value="{% if submitbutton == "submit" %}
+{{ column }}
+{% endif %}"/>
+<input type="submit" name="submit" value="submit">
+</form>
+{% if submitbutton == "submit" %}
+<h1>Row Data is {{ row }}</h1>
+<h1>Column Data is {{ column }}</h1>
+{% endif %}
+
+<p style="color:white"><b>Note : </b>Matrix range is from 1 to 10
+    only Encypted by using DSA and RSA Algorithm by <strong>private key.</strong></p>
+
+<p style="color:white"><i>&copy; 2019 jainhv@rknec.edu All rigths reserved.</i></p>
+
+
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'movie1/style.css' %}">
+
+<ul>
+    {% for a in all_movies %}
+    <li>
+        <a href="/movie1/{{ a.id}}/"> {{a.actor}}
+        </a>
+    </li>
+    {% endfor  %}
+</ul>
+</body>
+</html>

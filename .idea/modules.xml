@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Demo/.idea/Demo.iml" filepath="$PROJECT_DIR$/../Demo/.idea/Demo.iml" />
+      <module fileurl="file://E:/django/Tutor/.idea/Django-Tutorials-master.iml" filepath="E:/django/Tutor/.idea/Django-Tutorials-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MatEncrypt/.idea/MatEncrypt.iml" filepath="$PROJECT_DIR$/../MatEncrypt/.idea/MatEncrypt.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/Matrix/.idea/Matrix.iml" filepath="$USER_HOME$/PycharmProjects/Matrix/.idea/Matrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../demo/.idea/demo.iml" filepath="$PROJECT_DIR$/../demo/.idea/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../django_forms/.idea/django_forms.iml" filepath="$PROJECT_DIR$/../django_forms/.idea/django_forms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../forza/.idea/forza.iml" filepath="$PROJECT_DIR$/../forza/.idea/forza.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/harsh1.iml" filepath="$PROJECT_DIR$/.idea/harsh1.iml" />
+      <module fileurl="file://E:/django/mysite/.idea/mysite.iml" filepath="E:/django/mysite/.idea/mysite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../website/.idea/website.iml" filepath="$PROJECT_DIR$/../website/.idea/website.iml" />
+    </modules>
+  </component>
+</project>
