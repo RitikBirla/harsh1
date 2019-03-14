@@ -1,18 +1,16 @@
-
+from django.contrib.auth.models import User
 from django.db import models
 
 
-class Movie(models.Model):
-    actor = models.CharField(max_length=50)
-    actor_movie = models.CharField(max_length=100)
-    genre_movie = models.CharField(max_length=50)
-    movie_logo = models.CharField(max_length=10000)
+class Matrix(models.Model):
+    Row = models.IntegerField()
+    Column = models.IntegerField()
+    auth = models.ForeignKey(User, default=None, on_delete=None)
+    Select_Dimension = models.TextField(default='Row')
+    Data = models.CharField(max_length=1000, default=None)
+
+    def __int__(self):
+        return self.Row.Column
 
     def __str__(self):
-        return self.actor + '~*~*~*~*~*~' + self.actor_movie
-
-
-class Song(models.Model):
-    movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
-    file_type = models.CharField(max_length=40)
-    song_name = models.CharField(max_length=50)
+        return self.Select_Dimension

@@ -1,0 +1,27 @@
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RCOEM Matrix</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <style>
+        div {
+  background-color: lightgreen;
+}
+    </style>
+</head>
+<body style="padding: 20px;word-spacing: 12px;">
+<div style="text-align: center;"><h1>RCOEM MATRIX ENCRYPTION</h1>
+<form  method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form|crispy}}
+<br>
+<input type="submit" value="Submit">
+<br>
+</form>
+</div>
+<p>&copy; 2019 jainhv@knec.edu</p>
+</body>
+</html>
