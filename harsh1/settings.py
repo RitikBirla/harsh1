@@ -52,7 +52,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'harsh1.urls'
-
+#template star
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
